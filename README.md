@@ -44,8 +44,38 @@ Relay of TCP packets to supported DMX Interfaces
 
 #### DMXRelay
 
+Headless server software relaying network communications from the DMXRelayProtocol clients to connected DMX Interfaces. 
+
+Currently supported Interfaces:
+  * Eurolite USB-DMX512 PRO Interface MK1 
+  * Eurolite USB-DMX512 PRO Interface MK2
+  * Enttec OpenDMX USB
+  * UDMX (and Clones)
+
 #### DMXRelayConfigurator
+
+Remote GUI Configurator for DMX Relay, contains also a python script template to generate JSON dmxscenes for use in DMXRelay Servers
 
 ### Libraries
 
+#### libmidictrl
+
+Library for communication with midi controllers including auto-discovery of known controlers
+
+#### libwsctrl
+
+Library for Communicating with OBS Websocket Protocol for OBS Websockets v4.x
+
+#### python-elgato-streamdeck 
+
+Fork of python-elgato-streamdeck with the possibility to define a first search path for libusbhidapi native libraries and without dependency requirements for Pillow
+
 ### Other
+
+#### MidiInspect
+
+Debugging Console for midi communication. Displays incoming MIDI messages from the specified device, and allows sending midi messages to the device.
+
+#### OBSTools
+
+Quick python scripts in order to automate time consuming operations in OBS via websockets.
